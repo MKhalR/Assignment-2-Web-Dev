@@ -1,0 +1,234 @@
+/*variables*/
+;:root {
+    --nunito-font:'Nunito', cursive;
+}
+
+.home-body {
+    /*background-color: #536691;*/
+    background-image: url("https://source.unsplash.com/random/");
+    min-height: 100vh;
+    z-index: -10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.3rem;
+}
+.hero {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(31, 34, 118, 0.5);
+}
+
+h1 {
+    margin-top: 5rem;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    font-family: var(--nunito-font);
+    font-style: italic;
+    color: chartreuse;
+}
+
+.row {
+    margin-left: 8rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-family: var(--nunito-font);
+    font-weight: 500;
+    color: cornsilk;
+}
+ul {
+    /*border-top: 2px solid white;*/
+    margin-top: 1.5rem;
+    list-style: none;
+    /*display: none;*/
+}
+li {
+    border-bottom: 1px solid white;
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 0 1rem 0 1rem;
+}
+.checkboxes {
+    float: right;
+    line-height: 15px;
+    width: 17px;
+    height: 17px;
+    background-color: #e9ecef;
+    border: 1px solid #e9ecef;
+    border-radius: 3px;
+}
+
+.pos-message {
+    font-size: 1rem;
+    font-family: var(--nunito-font);
+    font-weight: 500;
+    color: white;
+}
+
+.positive-message {
+    position: center;
+    margin-left: 14rem;
+    margin-top: 8.5rem;
+}
+
+/* CSS from Assignment 1 to style the portfolio page, as
+well as new styling not seen in Assignment 1*/
+
+.port-hero {
+    background-color: rgba(31, 34, 118, 0.5);
+}
+
+h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 10px;
+    padding-bottom: 1.5px;
+    font-family: var(--nunito-font);
+    font-style: italic;
+    color: chartreuse;
+}
+
+.gallery-item {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    grid-auto-rows: minmax(150px, auto);
+    margin-top: 1.5rem;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gallery-item:hover .image {
+    filter: grayscale(1);
+}
+
+.gallery-item:hover .middle {
+    opacity: 1;
+}
+
+.gallery-item:hover {
+    box-shadow: 0 10px 20 px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    color: white;
+    font-size: 2.5rem;
+    padding: 16px 32px;
+    font-family: Oswald, sans-serif;
+}
+
+@media (max-width: 500px) {
+    .gallery-item,
+    body {
+        max-width: 30%;
+        grid-column: 2;
+        font-family: Oswald, sans-serif;
+        text-align: left;
+    }
+    div.container, h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    div.text {
+        font-size: 2.5em;
+    }
+}
+
+/* CSS for my CV page, used some existing code from Assignment 1 */
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    font-family: var(--nunito-font);
+    font-style: italic;
+    color: chartreuse;
+}
+
+h4 {
+    margin: 1.5em;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+h5 {
+    margin: 1.5em;
+    font-size: 1rem;
+}
+
+h6 {
+    margin: 1.5em;
+    font-size: 1rem;
+}
+
+.finalpara {
+    margin: 1.5em;
+    font-size: 1rem;
+}
+
+.centre {
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+img {
+    border-style: none;
+    border-radius: 100%;
+    filter: grayscale(0);
+}
+
+.leftColumn {
+    width: 30%;
+    height: 68vh;
+    float: left;
+}
+
+.left {
+    text-align: left;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.rightColumn {
+    width: 55%;
+    height: 68vh;
+    float: right;
+}
+
+/* CSS for my Contacts page */
+
+.contactpara {
+    margin: 1.5em;
+    font-size: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+}
